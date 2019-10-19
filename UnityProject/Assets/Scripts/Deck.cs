@@ -49,7 +49,7 @@ public class Deck
     /// </summary>
     public void Shuffle()
     {
-        List<Card> tempDeck = deck;
+        List<Card> tempDeck = new List<Card>(deck);
         deck.Clear();
 
         Debug.Log(tempDeck.Count);
