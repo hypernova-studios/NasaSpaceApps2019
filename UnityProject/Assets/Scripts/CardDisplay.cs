@@ -14,6 +14,8 @@ public class CardDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //card = JsonCardCreation.GetInstance().GetCard();
+
         descField = GetComponent<Transform>().Find("descField").GetComponent<Text>();
         popField = GetComponent<Transform>().Find("popField").GetComponent<Text>();
         imageField = GetComponent<Transform>().Find("imageField").GetComponent<Image>();
@@ -21,5 +23,7 @@ public class CardDisplay : MonoBehaviour
         descField.text = card.text;
         popField.text = card.population;
         imageField.sprite = card.artwork;
+
+        Debug.Log(JsonUtility.ToJson(card));
     }
 }
