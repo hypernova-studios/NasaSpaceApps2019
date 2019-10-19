@@ -32,7 +32,7 @@ public class Deck
     /// </summary>
     public void Shuffle()
     {
-        List<Card> tempDeck = deck;
+        List<Card> tempDeck = new List<Card>(deck);
         deck.Clear();
 
         while(tempDeck.Count > 0)
