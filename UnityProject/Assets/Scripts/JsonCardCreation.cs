@@ -6,8 +6,6 @@ public class JsonCardCreation
 {
     private static JsonCardCreation instance;
 
-    public Sprite img;
-
     public static JsonCardCreation GetInstance()
     {
         if(instance == null)
@@ -20,11 +18,13 @@ public class JsonCardCreation
     public Card GetCard()
     {
         var so = ScriptableObject.CreateInstance<Card>();
-        so.population = "Wow";
-        so.artwork = img;
-        so.text = "Sample card";
+        
+        System.IO.StreamReader file = new System.IO.StreamReader("Assets/Resources/basic.deck");
+        so.artwork = Resources.Load<Sprite>(file.ReadLine());
+        so.text = file.ReadLine();
+        so.population = file.ReadLine();
+        file.Close();
 
-        Debug.Log(JsonUtility.ToJson(so));
         return so;
     }
 
