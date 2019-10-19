@@ -5,14 +5,14 @@ using UnityEngine;
 /// <summary>
 /// A Deck of cards for our game
 /// </summary>
-public class Deck : MonoBehaviour
+public class Deck
 {
     private List<Card> deck = new List<Card>();
 
     /// <summary>
     /// Initialize a new deck (currently does nothing. Deck will be empty)
     /// </summary>
-    Deck()
+    public Deck()
     {
 
     }
@@ -44,11 +44,15 @@ public class Deck : MonoBehaviour
         return;
     }
 
+    /// <summary>
+    /// Draws a card off of the top of the deck (element 0). This also removes the
+    /// card from the deck
+    /// </summary>
+    /// <returns>The card on top of the deck.</returns>
     public Card DrawCard()
     {
-        int card = HSRandom.Next(deck.Count);
-        Card returnCard = deck[card];
-        deck.RemoveAt(card);
-        return returnCard;
+        Card card = deck[0];
+        deck.RemoveAt(0);
+        return card;
     }
 }
