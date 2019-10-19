@@ -1,0 +1,18 @@
+<GDAL_WMS>
+    <Service name="TMS">
+        <ServerUrl>https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/Landsat_WELD_CorrectedReflectance_TrueColor_Global_Annual/default/2010-12-01/31.25m/${z}/${y}/${x}.jpg</ServerUrl>
+    </Service>
+    <DataWindow>
+        <UpperLeftX>34.739</UpperLeftX>
+        <BottomRightX>34.740</BottomRightX>
+        <TopLeftY>-86.651</TopLeftY>
+        <BottomRightY>-86.652</BottomRightY>
+        <TileLevel>13</TileLevel>
+        <YOrigin>top</YOrigin>
+    </DataWindow>
+    <Projection>EPSG:4326</Projection>
+    <BlockSizeX>512</BlockSizeX>
+    <BlockSizeY>512</BlockSizeY>
+    <BandsCount>3</BandsCount>
+    <ZeroBlockHttpCodes>400</ZeroBlockHttpCodes>
+</GDAL_WMS>
