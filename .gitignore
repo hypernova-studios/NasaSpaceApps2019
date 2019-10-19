@@ -35,5 +35,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-# EditorSettings
-*.EditorSettings.asset
+UnityProject/ProjectSettings/EditorSettings.asset
