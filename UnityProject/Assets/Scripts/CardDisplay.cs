@@ -15,7 +15,7 @@ public class CardDisplay : MonoBehaviour
     void Start()
     {
         Deck d = new Deck("Assets/Resources/basic.deck");
-        //d.Shuffle();
+        d.Shuffle();
         card = d.DrawCard();
 
         descField = GetComponent<Transform>().Find("descField").GetComponent<Text>();
