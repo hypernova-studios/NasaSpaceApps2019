@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
-	<head></head>
-	<body>
-		<div>
-			<img src="files/PopkarteLogo.png"></img>
-		</div>
-		<div id="buttons">
-			<button id="play" onclick="playGame()">Play</button>
-			<button id="info">Info</button>
-			<button id="credits">Credits</button>
-		</div>
-        <script src="js/mainmenu.js"></script>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body background="files/Board.png">
+
+			<div align="center">
+				<div class="header">
+					<a href="index.html"><img src="files/PopkarteLogo.png"></img></a>
+				</div>
+			</div>
+			</br>
+			<div class="buttons" id="buttons" align="center">
+				<button id="play" onclick="playGame()">Play</button>
+				<button id="info" onclick="loadRules()">Rules</button>
+				<button id="credits">Credits</button>
+			</div>
+			<script src="js/mainmenu.js"></script>
 	</body>
 </html>
