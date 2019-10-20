@@ -13,7 +13,14 @@ public class Player : MonoBehaviour
     {
         roundsWon = 0;
         roundsLost = 0;
-        deck = new Deck();
+        deck = MasterDeck.GetRandomDeck();
+    }
+
+    public Player(Deck deck)
+    {
+        roundsWon = 0;
+        roundsLost = 0;
+        this.deck = deck;
     }
 
     public void AddWin()
