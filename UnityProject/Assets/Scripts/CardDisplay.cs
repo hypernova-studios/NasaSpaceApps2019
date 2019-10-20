@@ -12,6 +12,7 @@ public class CardDisplay : MonoBehaviour
     private Image imageField;
 
     public bool inHand;
+    public bool dragging;
     private Transform t;
 
     // Start is called before the first frame update
@@ -25,5 +26,16 @@ public class CardDisplay : MonoBehaviour
         descField.text = card.text;
         popField.text = card.population;
         imageField.sprite = card.artwork;
+    }
+
+    void Update()
+    {
+        dragging = GetComponent<Transform>().GetComponentInChildren<UIElementDragger>().dragging;
+        if(!dragging)
+        {
+            transform.localScale = new Vector3(0.30f, 0.30f, 0.30f);
+        } else {
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
     }
 }

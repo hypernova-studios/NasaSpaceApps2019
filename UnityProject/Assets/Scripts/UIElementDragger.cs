@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class UIElementDragger : EventTrigger {
 
-    private bool dragging;
+    public bool dragging;
 
     public void Update() {
         if (dragging) {
