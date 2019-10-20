@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     }
 
     public void Awake() {
-        if(deck != null) {deck = MasterDeck.GetRandomDeck();}
+        if(deck == null) {deck = MasterDeck.GetRandomDeck();}
     }
 
     public Player(Deck deck)
