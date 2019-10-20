@@ -55,4 +55,15 @@ public class Deck
         deck.RemoveAt(0);
         return card;
     }
+
+    public bool isEmpty()
+    {
+        if (deck.Count > 0)
+        {
+            return false;
+        } else
+        {
+            return true;
+        }
+    }
 }
