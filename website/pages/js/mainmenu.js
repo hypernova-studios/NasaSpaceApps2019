@@ -1,4 +1,4 @@
 function playGame()
 {
-    window.location.href = "https://www.google.com";
+    window.location.href = "files/game.html";
 }
