@@ -1,0 +1,30 @@
+huntsal
+Huntsville, Alabama
+762
+antlga
+Atlanta, Georgia
+1177
+nolals
+New Orleans, Louisiana
+1955
+nashtn
+Nashville, Tennessee
+1135
+laca
+Los Angeles, California
+6241
+prattal
+Prattville, Alabama
+222
+montal
+Montgomery, Alabama
+849
+pikerdal
+Pike Road, Alabama
+13
+beijch
+Beijing, China
+14300
+havacu
+Havana, Cuba
+3493
