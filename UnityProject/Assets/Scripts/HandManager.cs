@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HandManager : MonoBehaviour
 {
@@ -40,7 +41,11 @@ public class HandManager : MonoBehaviour
             if(!GameObject.Find("GameRules").GetComponent<GameLogic>().EndRound(caller.GetComponent<CardDisplay>().card, enemyCard))
             {
                 Destroy(caller, 5);
-                Destroy(enemyCard);
+                Destroy(GameObject.Find("Player1PlayedCard").GetComponentInChildren<CardDisplay>().gameObject, 5);
+            }
+            foreach(var i in x)
+            {
+                i.enabled = true;
             }
         }
     }
@@ -50,6 +55,7 @@ public class HandManager : MonoBehaviour
         var x = GetComponentsInChildren<UIElementDragger>();
         foreach(var i in x)
         {
+            Debug.Log(i);
             i.enabled = true;
         }
     }
