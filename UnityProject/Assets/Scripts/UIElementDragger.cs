@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class UIElementDragger : EventTrigger {
 
-    private bool dragging;
+    public bool dragging;
 
     public void Update() {
         if (dragging) {
@@ -18,5 +18,6 @@ public class UIElementDragger : EventTrigger {
 
     public override void OnPointerUp(PointerEventData eventData) {
         dragging = false;
+        transform.position = transform.parent.transform.position;
     }
 }
