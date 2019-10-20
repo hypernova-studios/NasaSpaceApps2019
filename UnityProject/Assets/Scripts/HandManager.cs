@@ -9,6 +9,8 @@ public class HandManager : MonoBehaviour
     public Player player;
     public GameObject cardLayout;
 
+    public Text endGameText;
+
     private Deck deck;
     public GameObject[] spawns;
 
@@ -52,7 +54,12 @@ public class HandManager : MonoBehaviour
             }
             else
             {
-                Debug.Log(GameObject.Find("GameRules").GetComponent<GameLogic>().GetWinner());
+                if(GameObject.Find("GameRules").GetComponent<GameLogic>().GetWinner()==0)
+                {
+                    endGameText.GetComponent<EndTextScript>().Win();
+                } else {
+                    endGameText.GetComponent<EndTextScript>().Lose();
+                }
             }
         }
     }
