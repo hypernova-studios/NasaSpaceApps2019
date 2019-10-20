@@ -18,5 +18,13 @@ Plock, Poland
 londonuk
 London, United Kingdom
 4842
+oxforduk
+Oxford, United Kingdom
+206
+limerickireland
+Limerick, Ireland
+douglasisleofman
+Douglas, Isle of Man
+72
 
 
