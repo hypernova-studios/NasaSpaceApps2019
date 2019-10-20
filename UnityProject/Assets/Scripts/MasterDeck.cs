@@ -7,7 +7,7 @@ public class MasterDeck : Deck
     private static MasterDeck instance = null;
     private static object padLock = new Object();
 
-    private MasterDeck() : base("Assets/SatImages/Resources/images.txt")
+    private MasterDeck() : base("images")
     {
 
     }

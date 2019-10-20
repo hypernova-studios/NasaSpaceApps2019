@@ -33,7 +33,7 @@ public class CardDisplay : MonoBehaviour
         dragging = GetComponent<Transform>().GetComponentInChildren<UIElementDragger>().dragging;
         if(!dragging)
         {
-            transform.localScale = new Vector3(0.30f, 0.30f, 0.30f);
+            transform.localScale = new Vector3(0.33f, 0.33f, 0.33f);
         } else {
             transform.localScale = new Vector3(1f, 1f, 1f);
         }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 /// <summary>
 /// A Deck of cards for our game
@@ -20,6 +21,7 @@ public class Deck
     // Better Deck
     public Deck(string path)
     {   
+        /*
         System.IO.StreamReader file = new System.IO.StreamReader(path);
         string line;
         while((line = file.ReadLine()) != null)
@@ -32,6 +34,21 @@ public class Deck
         }
 
         file.Close();
+        */
+
+        var textFile = Resources.Load<TextAsset>(path);
+        var text = textFile.text.Split('\n').ToList();
+        while(text.Count > 0)
+        {
+            var so = ScriptableObject.CreateInstance<Card>();
+            so.artwork = Resources.Load<Sprite>(text[0]);
+            so.text = text[1];
+            so.population = text[2];
+            deck.Add(so);
+            text.RemoveAt(2);
+            text.RemoveAt(1);
+            text.RemoveAt(0);
+        }
     }
 
     /// <summary>
