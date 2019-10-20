@@ -6,8 +6,8 @@ public class HSRandom
 {
     private static Random rnd = null;
 
-    private static int seed = 0;
-    //private static int seed = (new System.Random()).Next();
+    //private static int seed = 0;
+    private static int seed = (new System.Random()).Next();
 
     private static HSRandom instance = null;
     private static object padLock = new Object();
