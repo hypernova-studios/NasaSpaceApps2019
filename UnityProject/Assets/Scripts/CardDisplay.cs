@@ -36,7 +36,7 @@ public class CardDisplay : MonoBehaviour
             transform.localScale = new Vector3(0.33f, 0.33f, 0.33f);
         } else {
             transform.localScale = new Vector3(1f, 1f, 1f);
-            transform.SetAsLastSibling();
+            transform.parent.transform.SetAsLastSibling();
         }
     }
 }
