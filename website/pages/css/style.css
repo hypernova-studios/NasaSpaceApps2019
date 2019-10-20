@@ -4,6 +4,11 @@ body {
     background-image: url("files/Board.png");
     /*background-position: absolute;*/
     background-size: 100vw 100vh;
+    height: 100%;
+}
+
+#container {
+    min-height: 100%;
 }
 
 .header img {
@@ -44,3 +49,44 @@ body {
     width: 40%;
     padding: 3px;
 }
+
+.creditsbox{
+    background-color: #696969;
+    color: #e4b913;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 40%;
+    padding: 3px;
+}
+
+footer {
+    height: 4%;
+    color: #e4b913;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    }
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(2) {
+    order: 0;
+    flex: 1 1 auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(3) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+    }
