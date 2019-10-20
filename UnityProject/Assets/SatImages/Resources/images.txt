@@ -65,10 +65,10 @@ plockpoland
 Plock, Poland
 2521
 londonuk
-London, United Kingdom
+London, England
 4842
 oxforduk
-Oxford, United Kingdom
+Oxford, England
 206
 limerickireland
 Limerick, Ireland
@@ -124,3 +124,9 @@ Amsterdam, Netherlands
 brusselsbelgium
 Brussels, Belgium
 5475
+leuvenbelgium
+Leuven, Belgium
+1886
+nuremburggermany
+Nuremburg, Germany
+2344
