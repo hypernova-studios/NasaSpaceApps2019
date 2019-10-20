@@ -100,3 +100,12 @@ Xinquanxiang, China
 tokyojapan
 Tokyo, Japan
 7482
+nagoyajapan
+Nagoya, Japan
+2914
+kyotojapan
+Kyoto, Japan
+7758
+nantanjapan
+Nantan, Japan
+6241
