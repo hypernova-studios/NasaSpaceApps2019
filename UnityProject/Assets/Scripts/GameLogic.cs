@@ -134,7 +134,7 @@ public class GameLogic : MonoBehaviour
     /// 1: The Computer (or Player 2)
     /// 2: A tie between both
     /// </returns>
-    int GetWinner()
+    public int GetWinner()
     {
         if(player0.GetRoundsWon() > player1.GetRoundsWon())
         {

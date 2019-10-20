@@ -44,9 +44,17 @@ public class HandManager : MonoBehaviour
             {
                 Destroy(caller, 5);
                 Destroy(GameObject.Find("Player1PlayedCard").GetComponentInChildren<CardDisplay>().gameObject, 5);
+                StartCoroutine(beginTurn());
+
+                var card = deck.DrawCard();
+                var c = Instantiate(cardLayout, caller.transform.parent);
+                c.GetComponent<CardDisplay>().card = card;
+            }
+            else
+            {
+                Debug.Log(GameObject.Find("GameRules").GetComponent<GameLogic>().GetWinner());
             }
         }
-        StartCoroutine(beginTurn());
     }
 
     IEnumerator beginTurn()
