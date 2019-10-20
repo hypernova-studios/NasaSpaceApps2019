@@ -11,9 +11,13 @@ public class CardDisplay : MonoBehaviour
     private Text popField;
     private Image imageField;
 
+    public bool inHand;
+    private Transform t;
+
     // Start is called before the first frame update
     void Start()
     {
+        inHand = true;
         descField = GetComponent<Transform>().Find("descField").GetComponent<Text>();
         popField = GetComponent<Transform>().Find("popField").GetComponent<Text>();
         imageField = GetComponent<Transform>().Find("imageField").GetComponent<Image>();
@@ -21,7 +25,5 @@ public class CardDisplay : MonoBehaviour
         descField.text = card.text;
         popField.text = card.population;
         imageField.sprite = card.artwork;
-
-        //Debug.Log(JsonUtility.ToJson(card));
     }
 }
