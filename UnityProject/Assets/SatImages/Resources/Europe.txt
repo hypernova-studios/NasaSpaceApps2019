@@ -26,5 +26,10 @@ Limerick, Ireland
 douglasisleofman
 Douglas, Isle of Man
 72
-
+zurichswitzerland
+Zurich, Switzerland
+276
+budapesthungary
+Budapest, Hungary
+3351
 
