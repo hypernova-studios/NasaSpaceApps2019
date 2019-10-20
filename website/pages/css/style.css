@@ -35,3 +35,12 @@ body {
     /*border: none;*/
     font-size: 40px;
 }
+
+.rulesbox{
+    background-color: #696969;
+    color: #e4b913;
+    border-radius: 20px;
+    font-size: 18px;
+    width: 40%;
+    padding: 3px;
+}
