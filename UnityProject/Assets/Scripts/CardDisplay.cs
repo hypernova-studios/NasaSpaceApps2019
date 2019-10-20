@@ -42,7 +42,7 @@ public class CardDisplay : MonoBehaviour
         }
         else {
             transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-            transform.parent.transform.parent.GetComponent<HandManager>().endTurn(transform.parent.gameObject);
+            transform.parent.transform.parent.GetComponent<HandManager>().endTurn(gameObject);
         }
     }
 }

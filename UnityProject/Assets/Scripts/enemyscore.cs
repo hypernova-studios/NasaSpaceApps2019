@@ -8,7 +8,6 @@ public class enemyscore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject.Find("EnemyScore").GetComponentInChildren<Text>().text = GameLogic.GetInstance().player1.GetRoundsWon().ToString();
-        Debug.Log(GameLogic.GetInstance().player1.GetRoundsWon().ToString());
+        GameObject.Find("EnemyScore").GetComponentInChildren<Text>().text = GameObject.Find("GameRules").GetComponent<GameLogic>().player1.GetRoundsWon().ToString();
     }
 }

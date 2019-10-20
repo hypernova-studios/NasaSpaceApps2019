@@ -5,7 +5,6 @@ using UnityEngine;
 public class GameLogic : MonoBehaviour
 {
 
-    private static GameLogic instance;
     public Player player0; // The users Player
     public Player player1; // The Computers Player
 
@@ -16,18 +15,9 @@ public class GameLogic : MonoBehaviour
     // Start is called before the first frame update
     private GameLogic()
     {
-        player0 = new Player();
-        player1 = new Player();
+        //player0 = new Player();
+        //player1 = new Player();
         roundNum = 1;
-    }
-
-    public static GameLogic GetInstance()
-    {
-        if(instance == null)
-        {
-            instance = new GameLogic();
-        }
-        return instance;
     }
 
     // Update is called once per frame
@@ -49,7 +39,6 @@ public class GameLogic : MonoBehaviour
     {
         // Determine the winner of this turn
         int winner = DetermineHandWinner(card0, card1);
-        Debug.Log("winner: " + winner.ToString());
         if(winner == 0)
         {
             player0.AddWin();

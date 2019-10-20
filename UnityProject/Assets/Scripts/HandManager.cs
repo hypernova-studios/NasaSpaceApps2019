@@ -37,9 +37,8 @@ public class HandManager : MonoBehaviour
         {
             var enemyCard = GameObject.Find("EnemyHandManager").GetComponentInChildren<EnemyHM>().playCard();
             isTurn=false;
-            if(!GameLogic.GetInstance().EndRound(caller.GetComponentInChildren<CardDisplay>().card, enemyCard))
+            if(!GameObject.Find("GameRules").GetComponent<GameLogic>().EndRound(caller.GetComponent<CardDisplay>().card, enemyCard))
             {
-
                 Destroy(caller, 5);
                 Destroy(enemyCard);
             }
