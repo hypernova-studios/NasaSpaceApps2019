@@ -46,3 +46,57 @@ El Paso, Texas
 sanfranca
 San Francisco, California
 7758
+stockholmsweden
+Stockholm, Sweden
+4039
+daugavpilslatvia
+Daugavpils, Latvia
+65
+arnhemnetherlands
+Arnhem, Netherlands
+459
+parisfrance
+Paris, France 
+21498
+romeitaly
+Rome, Italy
+2232
+plockpoland
+Plock, Poland
+2521
+londonuk
+London, United Kingdom
+4842
+oxforduk
+Oxford, United Kingdom
+206
+limerickireland
+Limerick, Ireland
+1591
+douglasisleofman
+Douglas, Isle of Man
+72
+zurichswitzerland
+Zurich, Switzerland
+1411
+budapesthungary
+Budapest, Hungary
+4343
+hanshouchina
+Hanshou, China
+17
+taohuajiangzhenchina
+Taohuajiangzhen, China
+849
+yiyangchina
+Yiyang, China
+683
+zhuzhouchina
+Zhuzhou, China
+6471
+xinquanxiangchina
+Xinquanxiang, China
+659
+tokyojapan
+Tokyo, Japan
+7482
