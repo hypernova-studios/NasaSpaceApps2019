@@ -15,19 +15,22 @@ let obj = {};
 
 for (let i = 0; i < data.length; i += 1)
 	for (let j = 0; j < data[i].length; j += 1)
-		if (parseInt(data[i][j]) !== 99999 && parseInt(data[i][j]) > 200)
+		if (parseInt(data[i][j]) !== 99999 && parseInt(data[i][j]) > 9000)
 		{
-			const y = Math.floor(i / data.length * width);
-			const x = Math.floor(j / 2 / data[0].length * width);
-			const dimensions = Math.floor(4194304 / data.length);
+			const y = Math.floor(i / 3600 * width);
+			const x = Math.floor(j / 3600 * width);
+			const dimensionsx = 10*1165;
+			const dimensionsy = 10*582;
 			
-			fs.writeFileSync("./fetch.sh", "gdal_translate -of GTiff -outsize 700 700 -srcwin " + x + " " + y + " " + dimensions + " " + dimensions + " thing.xml file" + x + "and" + y + ".tif");
+			fs.writeFileSync("./fetch.sh", "gdal_translate -of GTiff -outsize 700 700 -srcwin " + x + " " + y + " " + dimensionsx + " " + dimensionsy + " thing.xml file" + x + "and" + y + ".tif");
+
+			console.log(x + "," + y + "," + dimensionsx + "," + dimensionsy + " on " + j + "," + i);
 			shell.exec("./fetch.sh");
-			console.log(x + "," + y + "," + dimensions + "," + dimensions + " on " + j + "," + i);
+			//console.log(data.length);
 			
 			obj[x + "," + y] = data[i][j];
 		}
 
-fs.writeFileSync("./out.txt", str);
+fs.writeFileSync("./pop.json", JSON.stringify(obj));
 
 process.stdin.read();

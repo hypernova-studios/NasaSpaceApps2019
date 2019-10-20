@@ -1,1 +1,1 @@
-gdal_translate -of GTiff -outsize 700 700 -srcwin 750896 482077 2328 2328 thing.xml file750896and482077.tif
+gdal_translate -of GTiff -outsize 700 350 -srcwin 0 0 4194304 2097152 thing.xml file2860282and382147.tif
