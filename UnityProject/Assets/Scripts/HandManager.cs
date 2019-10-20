@@ -13,7 +13,7 @@ public class HandManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        deck = new Deck("Assets/Resources/basic.deck");
+        deck = player.deck;
         
         deck.Shuffle();
         for(int i=0; i < 5; i++)

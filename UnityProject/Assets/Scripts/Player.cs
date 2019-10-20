@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     {
         roundsWon = 0;
         roundsLost = 0;
+        //deck = MasterDeck.GetRandomDeck();
     }
 
     public void Awake() {
