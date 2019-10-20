@@ -6,3 +6,7 @@ function playGame()
 function loadRules(){
     window.location.href = "rules.html";
 }
+
+function loadCredits(){
+    window.location.href = "credits.html";
+}
