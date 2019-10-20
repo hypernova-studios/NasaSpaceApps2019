@@ -52,10 +52,8 @@ public class Deck
         List<Card> tempDeck = new List<Card>(deck);
         deck.Clear();
 
-        Debug.Log(tempDeck.Count);
         while(tempDeck.Count > 0)
         {
-            Debug.Log(tempDeck.Count);
             int card = HSRandom.Next(tempDeck.Count);
             deck.Add(tempDeck[card]);
             tempDeck.RemoveAt(card);

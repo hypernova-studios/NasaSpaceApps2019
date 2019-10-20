@@ -14,10 +14,6 @@ public class CardDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Deck d = new Deck("Assets/Resources/basic.deck");
-        d.Shuffle();
-        card = d.DrawCard();
-
         descField = GetComponent<Transform>().Find("descField").GetComponent<Text>();
         popField = GetComponent<Transform>().Find("popField").GetComponent<Text>();
         imageField = GetComponent<Transform>().Find("imageField").GetComponent<Image>();

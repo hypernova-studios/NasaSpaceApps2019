@@ -13,7 +13,10 @@ public class Player : MonoBehaviour
     {
         roundsWon = 0;
         roundsLost = 0;
-        deck = new Deck();
+    }
+
+    public void Awake() {
+        deck = new Deck("Assets/Resources/basic.deck");
     }
 
     public void AddWin()
