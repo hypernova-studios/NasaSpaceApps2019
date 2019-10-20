@@ -8,7 +8,7 @@ public class UIElementDragger : EventTrigger {
 
     public void Update() {
         if (dragging) {
-            transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+            transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y + 300);
         }
     }
 
