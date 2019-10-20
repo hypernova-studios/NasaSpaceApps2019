@@ -24,9 +24,21 @@ public class HandManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void endTurn()
     {
-        
+        var x = GetComponentsInChildren<UIElementDragger>();
+        foreach(var i in x)
+        {
+            i.enabled = false;
+        }
+    }
+
+    public void beginTurn()
+    {
+        var x = GetComponentsInChildren<UIElementDragger>();
+        foreach(var i in x)
+        {
+            i.enabled = true;
+        }
     }
 }

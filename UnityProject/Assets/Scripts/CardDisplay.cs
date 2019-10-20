@@ -12,6 +12,7 @@ public class CardDisplay : MonoBehaviour
     private Image imageField;
 
     public bool inHand;
+    public bool onBoard;
     public bool dragging;
     private Transform t;
 
@@ -19,6 +20,7 @@ public class CardDisplay : MonoBehaviour
     void Start()
     {
         inHand = true;
+        onBoard = false;
         descField = GetComponent<Transform>().Find("descField").GetComponent<Text>();
         popField = GetComponent<Transform>().Find("popField").GetComponent<Text>();
         imageField = GetComponent<Transform>().Find("imageField").GetComponent<Image>();
@@ -31,12 +33,16 @@ public class CardDisplay : MonoBehaviour
     void Update()
     {
         dragging = GetComponent<Transform>().GetComponentInChildren<UIElementDragger>().dragging;
-        if(!dragging)
+        if(!dragging && !onBoard)
         {
             transform.localScale = new Vector3(0.33f, 0.33f, 0.33f);
-        } else {
+        } else if (dragging) {
             transform.localScale = new Vector3(1f, 1f, 1f);
             transform.parent.transform.SetAsLastSibling();
+        }
+        else {
+            transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+            transform.parent.transform.parent.GetComponent<HandManager>().endTurn();
         }
     }
 }
