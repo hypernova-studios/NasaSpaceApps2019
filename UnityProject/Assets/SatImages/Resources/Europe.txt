@@ -1,0 +1,22 @@
+stockholmsweden
+Stockholm, Sweden
+4039
+daugavpilslatvia
+Daugavpils, Latvia
+65
+arnhemnetherlands
+Arnhem, Netherlands
+parisfrance
+Paris, France 
+21498
+romeitaly
+Rome, Italy
+2232
+plockpoland
+Plock, Poland
+2521
+londonuk
+London, United Kingdom
+4842
+
+
