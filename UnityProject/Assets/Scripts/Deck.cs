@@ -17,6 +17,23 @@ public class Deck
 
     }
 
+    // Better Deck
+    public Deck(string path)
+    {   
+        System.IO.StreamReader file = new System.IO.StreamReader(path);
+        string line;
+        while((line = file.ReadLine()) != null)
+        {
+            var so = ScriptableObject.CreateInstance<Card>();
+            so.artwork = Resources.Load<Sprite>(line);
+            so.text = file.ReadLine();
+            so.population = file.ReadLine();
+            deck.Add(so);
+        }
+
+        file.Close();
+    }
+
     /// <summary>
     /// Add a card to the deck
     /// </summary>
@@ -35,8 +52,10 @@ public class Deck
         List<Card> tempDeck = new List<Card>(deck);
         deck.Clear();
 
+        Debug.Log(tempDeck.Count);
         while(tempDeck.Count > 0)
         {
+            Debug.Log(tempDeck.Count);
             int card = HSRandom.Next(tempDeck.Count);
             deck.Add(tempDeck[card]);
             tempDeck.RemoveAt(card);
