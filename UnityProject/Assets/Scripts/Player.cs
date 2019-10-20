@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     private int roundsWon;
     private int roundsLost;
-    public Deck deck;
+    public Deck deck = null;
 
 
     public Player()
@@ -16,7 +16,14 @@ public class Player : MonoBehaviour
     }
 
     public void Awake() {
-        deck = new Deck("Assets/Resources/basic.deck");
+        if(deck != null) {deck = MasterDeck.GetRandomDeck();}
+    }
+
+    public Player(Deck deck)
+    {
+        roundsWon = 0;
+        roundsLost = 0;
+        this.deck = deck;
     }
 
     public void AddWin()

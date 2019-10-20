@@ -83,4 +83,9 @@ public class Deck
             return true;
         }
     }
+
+    public int Size()
+    {
+        return deck.Count;
+    }
 }
