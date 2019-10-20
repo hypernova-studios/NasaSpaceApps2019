@@ -28,3 +28,21 @@ Beijing, China
 havacu
 Havana, Cuba
 3493
+miamfl
+Miami, Florida
+3133
+sargcl
+Sargents, Colorado
+1
+nyny
+New York, New York
+8969
+detrmi
+Detroit, Michigan
+3133
+elptx
+El Paso, Texas
+1886
+sanfranca
+San Francisco, California
+7758
