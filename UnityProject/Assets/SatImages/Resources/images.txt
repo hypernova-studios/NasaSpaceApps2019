@@ -109,3 +109,12 @@ Kyoto, Japan
 nantanjapan
 Nantan, Japan
 6241
+taipeitaiwan
+Taipei, Taiwan
+5598
+chiayicitytaiwan
+Chiayi City, Taiwan
+2710
+athensgreece
+Athens, Greece
+6472
