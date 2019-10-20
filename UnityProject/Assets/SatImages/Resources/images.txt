@@ -28,3 +28,9 @@ Beijing, China
 havacu
 Havana, Cuba
 3493
+miamfl
+Miami, Florida
+3133
+sargcl
+Sargents, Colorado
+1
