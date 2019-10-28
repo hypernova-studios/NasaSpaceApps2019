@@ -1,6 +1,6 @@
 # Popkarte
 Popkarte is a Unity game based around encouraging people to look at the world around them from new perspectives. This is done by allowing users to play a card game that compares data about certain locations around the world.<br>
-This project was created in conjunction with the NASA Space Apps Challenge 2019 completing the challenge "1-Up for NASA". For more information on this, please visit [here](https://2019.spaceappschallenge.org/challenges/living-our-world/1up-nasa-earth/teams/hypernova-studios/project)
+This project was created in conjunction with the NASA Space Apps Challenge 2019 completing the challenge "1-Up for NASA". For more information on this, please visit [here](https://2019.spaceappschallenge.org/challenges/living-our-world/1up-nasa-earth/teams/hypernova-studios/project).
 
 ## Table of Contents
  - [Deployment](#deploy)
@@ -35,4 +35,4 @@ Artist<br/>
  - Ben Solomon<br/>
 
 Used Resources<br/>
-- Center for International Earth Science Information Network - CIESIN - Columbia University. 2018. Gridded Population of the World, Version 4 (GPWv4): Population Density, Revision 11. Palisades, NY: NASA Socioeconomic Data and Applications Center (SEDAC). [https://doi.org/10.7927/H49C6VHW.] Accessed 19 October 2019.
+- Center for International Earth Science Information Network - CIESIN - Columbia University. 2018. Gridded Population of the World, Version 4 (GPWv4): Population Density, Revision 11. Palisades, NY: NASA Socioeconomic Data and Applications Center (SEDAC). [https://doi.org/10.7927/H49C6VHW](https://doi.org/10.7927/H49C6VHW). Accessed 19 October 2019.
