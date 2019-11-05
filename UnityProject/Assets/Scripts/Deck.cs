@@ -85,7 +85,6 @@ public class Deck
     /// <returns>The card on top of the deck.</returns>
     public Card DrawCard()
     {
-        Debug.Log(deck.Count);
         Card card = deck[0];
         deck.RemoveAt(0);
         return card;

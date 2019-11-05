@@ -18,7 +18,7 @@ public class UIElementDragger : EventTrigger {
 
     public override void OnPointerUp(PointerEventData eventData) {
         dragging = false;
-        if(transform.position.y > 750){
+        if(transform.position.y > 500){
             transform.GetComponentInChildren<CardDisplay>().inHand = false;
             transform.GetComponentInChildren<CardDisplay>().onBoard = true;
             }
