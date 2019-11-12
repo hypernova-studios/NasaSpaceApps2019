@@ -947,7 +947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1425584995}
-  cardLayout: {fileID: 7310136173631634928, guid: d83e12933d6df4d3091a3dfc7bdeb138,
+  cardLayout: {fileID: 56160842515133408, guid: d83e12933d6df4d3091a3dfc7bdeb138,
     type: 3}
   endGameText: {fileID: 2053205376}
   spawns:
@@ -1694,7 +1694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2107600543}
   spawn: {fileID: 416714934}
-  cardLayout: {fileID: 7310136173631634928, guid: d83e12933d6df4d3091a3dfc7bdeb138,
+  cardLayout: {fileID: 56160842515133408, guid: d83e12933d6df4d3091a3dfc7bdeb138,
     type: 3}
 --- !u!1 &1622557317
 GameObject:
